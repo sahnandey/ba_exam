@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Analytics Dashboard</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.24.2/plotly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-brand">TechTrends Analytics</div>
+    <button class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <ul class="nav-menu">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#analysis">Analysis</a></li>
+        <li><a href="#models">Models</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+</nav>
+
+<header id="home" class="hero">
+    <div class="hero-content">
+        <img src="content/image/report.jpg" alt="Analyst Photo" class="profile-image">
+        <h1 class="animate-text">E-commerce Customer Analysis</h1>
+        <p class="animate-text">Comprehensive insights into customer behavior and predictive modeling</p>
+    </div>
+</header>
+
+<main>
+    <section id="analysis" class="section">
+        <h2>Key Findings</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Customer Demographics</h3>
+                <div id="demographicsChart" class="chart"></div>
+            </div>
+            <div class="grid-item">
+                <h3>Purchase Patterns</h3>
+                <div id="purchaseChart" class="chart"></div>
+            </div>
+        </div>
+        <div class="stats-container">
+            <div class="stat-card">
+                <h4>Average Purchase</h4>
+                <p>$<span class="counter" data-target="245">0</span></p>
+            </div>
+            <div class="stat-card">
+                <h4>Customer Satisfaction</h4>
+                <p><span class="counter" data-target="92">0</span>%</p>
+            </div>
+            <div class="stat-card">
+                <h4>Promotion Usage</h4>
+                <p><span class="counter" data-target="30">0</span>%</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="models" class="section">
+        <h2>Predictive Models</h2>
+        <div class="model-container">
+            <div class="model-card">
+                <h3>Purchase Prediction Model</h3>
+                <div id="modelPerformanceChart" class="chart"></div>
+                <ul class="feature-list">
+                    <li>R-squared: 0.76</li>
+                    <li>Mean Squared Error: 2,450</li>
+                    <li>Key Features: Income, Loyalty Status, Purchase Frequency</li>
+                </ul>
+            </div>
+            <div class="model-card">
+                <h3>Promotion Usage Prediction</h3>
+                <div id="promotionModelChart" class="chart"></div>
+                <ul class="feature-list">
+                    <li>Accuracy: 85%</li>
+                    <li>Precision: 82%</li>
+                    <li>Key Features: Purchase History, Income Level, Product Category</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations" class="section">
+        <h2>Strategic Recommendations</h2>
+        <div class="recommendations-grid">
+            <div class="recommendation-card">
+                <h3>Customer Segmentation</h3>
+                <p>Implement targeted marketing strategies based on identified customer segments</p>
+                <div class="priority-badge high">High Priority</div>
+            </div>
+            <div class="recommendation-card">
+                <h3>Promotional Strategy</h3>
+                <p>Optimize promotional timing and customize offers by product category</p>
+                <div class="priority-badge medium">Medium Priority</div>
+            </div>
+            <div class="recommendation-card">
+                <h3>Loyalty Program</h3>
+                <p>Enhance benefits for high-frequency purchasers and create targeted upgrade paths</p>
+                <div class="priority-badge high">High Priority</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 TechTrends Analytics. All rights reserved.</p>
+</footer>
+
+<script src="assets/index.js"></script>
+</body>
+</html>
